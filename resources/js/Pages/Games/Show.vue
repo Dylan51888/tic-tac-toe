@@ -97,6 +97,7 @@ const updateOpponent = () => {
 };
 
 const fillSquare = (index) => {
+    console.log("");
     if (! yourTurn.value) {
         return;
     }

@@ -77,7 +77,7 @@ class GameController extends Controller
     {
         $data = $request->validate([
             'state' => ['required', 'array', 'size:9'],
-            'state.*' => ['integer', 'between:-1,1']
+            'state.*' => ['integer', 'between:-1,1'],
         ]);
 
         $game->update($data);
